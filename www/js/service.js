@@ -753,7 +753,7 @@ angular.module('app.services', [])
               if (data.success === true)
               {
                 self.setReservedScheduleID(null);
-                def.resolve();
+                def.resolve(data);
               }else{
                 def.reject(JSON.stringify(data));
               }
